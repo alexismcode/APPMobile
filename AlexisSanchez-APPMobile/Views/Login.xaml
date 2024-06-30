@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlexisSanchez_APPMobile.Views.Login"
+             Title="Login y Registro">
+    
+    <VerticalStackLayout 
+        HorizontalOptions="Center" 
+        VerticalOptions="Center">
+       
+        <!-- Register Form -->
+        <StackLayout x:Name="registerForm">
+            <Frame 
+                BorderColor="#DA3C15"
+                BackgroundColor="#373739"
+                CornerRadius="10" 
+                Padding="20" 
+                HasShadow="True"
+                WidthRequest="330">
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Registrar usuario" 
+                        TextColor="#DA3C15"
+                        FontSize="Large" 
+                        FontFamily="ChakraPetch-Bold"
+                        HorizontalOptions="Center" 
+                        Margin="0,0,0,20" />
+
+                    <Label 
+                        Text="Correo" 
+                        FontSize="Medium"
+                        FontFamily="ChakraPetch-Medium"/>
+                    <Entry 
+                        x:Name="txtRegisterEmail" 
+                        Placeholder="Ingrese su correo" 
+                        Keyboard="Email" 
+                        FontFamily="ChakraPetch-Light"
+                        TextChanged="OnEmailTextChanged" />
+
+                    <Label 
+                        Text="Contraseña" 
+                           FontSize="Medium" 
+                           FontFamily="ChakraPetch-Medium"/>
+                    <Entry 
+                        x:Name="txtRegisterPassword" 
+                        Placeholder="Ingrese su contraseña" 
+                        IsPassword="True" 
+                        FontFamily="ChakraPetch-Light"/>
+
+                    <Button 
+                        Text="Registrarse" 
+                        Clicked="OnRegisterClicked" 
+                        BackgroundColor="#D43C15" 
+                        TextColor="White" 
+                        Margin="0,10,0,0"
+                        FontFamily="ChakraPetch-Bold"/>
+
+                    <Label 
+                        x:Name="lblRegisterMessage" 
+                        FontSize="13" 
+                        TextColor="#D43C15" 
+                        Margin="0,10,0,0"
+                        HorizontalOptions="Center"
+                        FontFamily="ChakraPetch-Light"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Button 
+                Text="Ya tengo una cuenta" 
+                Clicked="ShowLoginForm" 
+                BackgroundColor="#D77C65" 
+                TextColor="White" 
+                HorizontalOptions="Center"
+                Margin="20,10,20,0"
+                FontFamily="ChakraPetch-Bold"/>
+        </StackLayout>
+
+        <!-- Login Form -->
+        <StackLayout 
+            x:Name="loginForm" 
+            IsVisible="False">
+            <Frame 
+                BorderColor="#DA3C15"
+                BackgroundColor="#373739"
+                CornerRadius="10" 
+                Padding="20" 
+                HasShadow="True"
+                WidthRequest="330">
+                <VerticalStackLayout>
+                    <Label 
+                        Text="Iniciar sesión" 
+                        TextColor="#DA3C15"
+                        FontFamily="ChakraPetch-Bold"
+                        FontSize="Large" 
+                        HorizontalOptions="Center" 
+                        Margin="0,0,0,20" />
+
+                    <Label 
+                        Text="Correo" 
+                        FontSize="Medium"
+                        FontFamily="ChakraPetch-Medium"/>
+                    <Entry 
+                        x:Name="txtLoginEmail" 
+                        Placeholder="Ingrese su correo" 
+                        Keyboard="Email" 
+                        TextChanged="OnEmailTextChanged"
+                        FontFamily="ChakraPetch-Light"/>
+
+                    <Label 
+                        Text="Contraseña" 
+                        FontSize="Medium" 
+                        FontFamily="ChakraPetch-Medium"/>
+                    <Entry 
+                        x:Name="txtLoginPassword" 
+                        Placeholder="Ingrese su contraseña" 
+                        IsPassword="True" 
+                        FontFamily="ChakraPetch-Light"/>
+
+                    <Button 
+                        Text="Iniciar Sesión" 
+                        Clicked="OnLoginClicked" 
+                        BackgroundColor="#D43C15"  
+                        TextColor="White" 
+                        Margin="0,10,0,0"
+                        FontFamily="ChakraPetch-Bold"/>
+
+                    <Label 
+                        x:Name="lblLoginMessage" 
+                        FontSize="Small" 
+                        TextColor="#D43C15" 
+                        Margin="0,10,0,0"
+                        HorizontalOptions="Center"
+                        FontFamily="ChakraPetch-Light"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Button 
+                Text="No tengo una cuenta" 
+                Clicked="ShowRegisterForm" 
+                BackgroundColor="#D77C65" 
+                TextColor="White" 
+                HorizontalOptions="Center"
+                Margin="20,10,20,0"
+                FontFamily="ChakraPetch-Bold"/>
+        </StackLayout>
+
+        <!-- Success Message -->
+        <Label 
+            x:Name="lblSuccessMessage" 
+            FontSize="30" 
+            TextColor="#D43C15" 
+            HorizontalOptions="Center" 
+            IsVisible="False"
+            FontFamily="ChakraPetch-Bold"/>
+    </VerticalStackLayout>
+</ContentPage>

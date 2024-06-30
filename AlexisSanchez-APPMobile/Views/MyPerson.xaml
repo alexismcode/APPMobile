@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlexisSanchez_APPMobile.Views.MyPerson"
+             Title="¿Quién es Alexis Sánchez?">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description="Imagen sobre el logo de la página"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Label 
+                Text="Hola, bienvenido a mi APP."
+                FontSize="Medium"
+                FontFamily="ChakraPetch-Bold"
+                HorizontalOptions="Center" 
+                Margin="10"
+                TextColor="#DA3C15"/>
+
+            <Label 
+                Text="Soy una persona extrovertida que intenta ingresar al mundo de los sistemas. Estoy apegado a mi fe y tengo un gusto por el arte. También soy alguien que desea completar algunos sueños y metas que tengo en mente, como conseguir un buen trabajo en sistemas, generar una estabilidad económica buena, poder viajar y conocer varios países, y enfocar mi poder de expresión en el arte. Además, intento dejar una huella en las personas que conozco y que puedan tener una buena imagen de cómo soy y qué pueden encontrar en mí."
+                FontSize="Small"
+                TextColor="#ecdda2"
+                Margin="20,10,20,10"
+                Padding="20"
+                FontFamily="ChakraPetch-Light"/>
+
+
+            <Label 
+                Text="Mis estudios:"
+                FontSize="Medium"
+                HorizontalOptions="Start" 
+                Margin="0,0,5,0"
+                TextColor="#DA3C15"
+                FontFamily="ChakraPetch-Medium"
+                BackgroundColor="#373739"
+                Padding="20"
+                WidthRequest="1000"/>
+
+            <StackLayout>
+                <Label 
+                    Text="• BACHILLER EN CIENCIAS: Escuela Municipal Sucre (2019 - 2020)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• TECNÓLOGO EN DESA DESARROLLO DE SOFTWARE: ITI Tecnológico Universitario (2019 - En curso)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"
+                    TextColor="#ecdda2"/>
+            </StackLayout>
+
+            <Label 
+                Text="Certificados:"
+                FontSize="Medium"
+                HorizontalOptions="Start" 
+                Margin="0,0,5,0"
+                TextColor="#DA3C15"
+                FontFamily="ChakraPetch-Medium"
+                BackgroundColor="#373739"
+                Padding="20"
+                WidthRequest="1000"/>
+
+            <StackLayout>
+                <Label 
+                    Text="• Desarrollador Frontend: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Diseño para Programadores: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Arquitectura de Software: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Redes Informáticas: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Escuela de C: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Ingenieria de Software: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Analista de Negocios RPA: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Fundamentos de Node.js: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Webpack: PLATZI (2020 - 2021)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• Hacking Ético: ETHICAL HACKING y RED TEAM (2022)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+                <Label 
+                    Text="• CNNA 1 y CNNA 2: Cisco Packet Tracer (2023)" 
+                    FontSize="Small" 
+                    HorizontalOptions="Start" 
+                    TextColor="#ecdda2"
+                    Padding="20,5,20,5"
+                    FontFamily="ChakraPetch-Light"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
